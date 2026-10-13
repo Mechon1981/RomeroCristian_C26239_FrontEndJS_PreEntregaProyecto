@@ -1,10 +1,31 @@
+/******************************************************************************
 
-/*nuevo comentario*/
+  Talento TECH - Front-End Js
+  Profesor: Nicolas Fernandez
+  Alumno: Cristian Romero
+  Fecha: 12/10/2026
+  Archivo: style.css
 
-/* ============================================================
-     1) RESET BASICO
-     Sacamos los margenes que el navegador pone por defecto.
-     ============================================================ */
+  negro_01  -->  #333 (Gris oscuro)
+  negro_02  -->  #000 (Negro intenso)
+  claro_01  -->  #fff6ea (Crema claro)
+  claro_02  -->  #fcd098 (Crema oscuro)
+  blanco_01 --> 
+  azul_01   -->  #1877F2
+  marron_01 -->  #a06a24 (Claro)
+  marron_02 -->  #744c19 (Oscuro)
+  marron_03 -->  #FFD34D (de
+
+
+  Se utiliza el template del profesor para la creacion de una pagina web personalizada.
+
+******************************************************************************/
+
+  /*===========================================================================
+    1) RESET BASICO
+       Sacamos los margenes que el navegador pone por defecto.
+  ===========================================================================*/
+
   * {
     margin: 0;
     padding: 0;
@@ -14,24 +35,28 @@
   body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    color: #222;
+    /* color: #222; */      /* Opcion 1: Color texto body ejemplo */
+    color: #333;          /* Opcion 2: Color texto body negro_01 */
     background: #FAFAFA;
   }
 
   /* Clase reutilizable: centra el contenido y le pone un ancho maximo */
+
   .contenedor {
     max-width: 1100px;
     margin: 0 auto;          /* 0 arriba/abajo, auto a los costados = centrado */
     padding: 0 20px;
   }
 
-  /* ============================================================
-     2) HEADER
-     display:flex + justify-content:space-between
-     => logo a la izquierda, menu a la derecha.
-     ============================================================ */
+  /*===========================================================================
+    2) HEADER
+       display:flex + justify-content:space-between
+       => logo a la izquierda, menu a la derecha.
+  ===========================================================================*/
+
   header {
-    background: #2F8F83;
+    /* background: #2F8F83; */    /* Opcion 1: Fondo header ejemplo */
+    background: #333;           /* Opcion 2: Fondo header negro_01 */
     color: white;
     padding: 15px 0;
   }
@@ -45,18 +70,24 @@
   }
 
   .logo {
-    font-size: 24px;
-    font-weight: bold;
+    /* font-size: 24px; */      /* Opcion 1: Tamaño de letra de ejemplo */
+    font-size: 36px;            /* Opcion 2: Tamaño de letra de logo = 36 */
+
+    font-weight: bold;          /* Letras en negritas */
+
+    font-style: italic;         /* Letras inclinadas */
+
   }
 
   .logo span {
-    color: #FFD34D;          /* pintamos solo una parte del nombre */
+    color: #FFD34D;          /* Colorea solo una parte del nombre del logo */
   }
 
   /* El menu tambien es flex: los <li> quedan en fila */
   .menu {
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
+    gap: 24px;
     list-style: none;        /* saca los puntitos de la lista */
   }
 
@@ -69,16 +100,21 @@
     color: #FFD34D;
   }
 
-  /* ============================================================
-     3) HERO (banner de bienvenida)
-     ============================================================ */
+  /*===========================================================================
+    3) HERO (banner de bienvenida)
+  ===========================================================================*/
+
   .hero {
-    background: #1F6F66;
-    color: white;
+    /* background: #1F6F66; */    /* Opcion 1: Fondo de banner ejemplo */
+    background: #fff6ea;        /* Opcion 2: Fondo de banner claro_1 */
+    font-weight: bold;
+    /* color: white; */           /* Opcion 1: Color texto de banner ejemplo */
+    color: #333;                /* Opcion 2: Color texto de banner negro_01 */
     text-align: center;
     padding: 60px 20px;
+    
   }
-
+    
   .hero h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -87,8 +123,10 @@
   .boton {
     display: inline-block;
     margin-top: 20px;
-    background: #FFD34D;
-    color: #222;
+    /* background: #FFD34D; */    /* Opcion 1: Color boton sin presionar ejemplo */
+    background: #333;           /* Opcion 2: Color boton sin presionar negro_01 */
+    /* color: #222; */      /* Opcion 1: Color texto boton ejemplo */
+    color: #FFF;         /* Opcion 2: Color texto boton blanco_01 */
     padding: 12px 28px;
     border-radius: 6px;
     text-decoration: none;
@@ -96,7 +134,8 @@
   }
 
   .boton:hover {
-    background: #FFC107;
+    /* background: #FFC107; */    /* Opcion 1: Color boton presionado ejemplo */
+    background: #000;           /* Opcion 2: Color boton presionado negro_02 */
   }
 
   /* ============================================================
@@ -104,7 +143,10 @@
      Este es el flexbox mas importante del ejercicio:
      flex-wrap: wrap  => las cards bajan de linea solas.
      ============================================================ */
+
   main {
+    padding-top: 30px;        /* Se agrega para darle un pequeño margen */
+    background: #fcd098;    /* Se agrega para cambiar el color de fondo a claro_02 */
     padding-bottom: 50px;
   }
 
@@ -126,7 +168,8 @@
      2 en tablet y 1 en celular. */
   .card {
     flex: 0 1 320px;
-    background: white;
+    /* background: white; */      /* Opcion 1: Fondo de card ejemplo */
+    background: #fff6ea;        /* Opcion 2: Fondo de card claro_1 */
     border: 1px solid #E0E0E0;
     border-radius: 8px;
     overflow: hidden;         /* recorta la imagen a las esquinas redondeadas */
@@ -155,8 +198,10 @@
 
   .categoria {
     font-size: 12px;
+    font-weight: bold;
     text-transform: uppercase;
-    color: #2F8F83;
+    /* color: #2F8F83; */
+    color: #744c19;
     letter-spacing: 1px;
   }
 
@@ -167,12 +212,16 @@
   .precio {
     font-size: 20px;
     font-weight: bold;
-    color: #1F6F66;
-    margin-top: auto;         /* empuja el precio al fondo de la card */
+
+    /* color: #1F6F66; */     /* Opcion 1: Color precio ejemplo */
+    color: #000;            /* Opcion 2: Color precio negro_02 */
+
+    margin-top: auto;       /* empuja el precio al fondo de la card */
   }
 
   .card button {
-    background: #2F8F83;
+    /* background: #2F8F83; */
+    background: #a06a24;
     color: white;
     border: none;
     padding: 10px;
@@ -182,15 +231,18 @@
   }
 
   .card button:hover {
-    background: #1F6F66;
+    /* background: #1F6F66; */
+    background: #744c19;
   }
 
   /* ============================================================
      5) FOOTER
      Otra vez flex: tres columnas que se acomodan solas.
      ============================================================ */
+
   footer {
-    background: #222;
+    /* background: #222; */   /* Opcion 1: Fondo footer ejemplo */
+    background: #333;       /* Opcion 2: Fondo footer negro_01 */
     color: #DDD;
     padding: 40px 0 20px;
   }
@@ -245,7 +297,8 @@
   }
 
   .redes a:hover {
-    background: #2F8F83;
+    /* background: #2F8F83; */
+    background: #1877F2;
     color: white;
   }
 
@@ -262,6 +315,7 @@
      Otro flex: datos a un lado y el mapa al otro.
      Con flex-wrap, en celular el mapa baja abajo de los datos.
      ============================================================ */
+
   .bloque-contacto {
     display: flex;
     flex-wrap: wrap;
@@ -279,7 +333,8 @@
 
   .datos-contacto h3 {
     font-size: 18px;
-    color: #1F6F66;
+    /* color: #1F6F66; */     /* Opcion 1: Color de textos seccion contactos ejemplo */
+    color: #1877F2;         /* Opcion 2: Color de textos seccion contactos azul_01 */
     margin-bottom: 10px;
   }
 
@@ -294,17 +349,20 @@
 
   /* Los iconos quedan todos alineados a la misma distancia */
   .datos-contacto li i {
-    color: #2F8F83;
+    /* color: #2F8F83; */   /* Opcion 1: Color de iconos ejemplo */
+    color: #1877F2;       /* Opcion 2: Color de iconos azul_01 */
     width: 22px;
   }
 
   .datos-contacto a {
-    color: #222;
+    /* color: #222; */      /* Opcion 1: Color de letra de datos-contacto ejemplo */
+    color: #000;          /* Opcion 2: Color de letra de datos-contacto negro_02 */
     text-decoration: none;
   }
 
   .datos-contacto a:hover {
-    color: #2F8F83;
+    /* color: #2F8F83; */
+    color: #1877F2;
     text-decoration: underline;
   }
 
@@ -314,6 +372,7 @@
   }
 
   /* El mapa: el iframe ocupa todo el ancho de su columna */
+
   .mapa {
     flex: 1 1 420px;
     min-height: 340px;
