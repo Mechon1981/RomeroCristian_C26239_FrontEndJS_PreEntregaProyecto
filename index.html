@@ -1,3 +1,15 @@
+<!-- **************************************************************************
+
+  Talento TECH - Front-End Js
+  Profesor: Nicolas Fernandez
+  Alumno: Cristian Romero
+  Fecha: 12/10/2026
+  Archivo: index.html
+
+  Se utiliza el template del profesor para la creacion de una pagina web personalizada.
+
+*************************************************************************** -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,10 +22,15 @@
 </head>
 <body>
 
-<!-- ==================== HEADER ==================== -->
+<!-- ==========================================================================
+==================================== HEADER ===================================
+=========================================================================== -->
+
 <header>
   <div class="contenedor barra-nav">
-    <div class="logo">Talento<span>Tech</span> Store</div>
+    <!-- <div class="logo">De<span> Campo</span> Store</div> -->   <!-- Opcion 1: Se colorea una palabra de la frase (ejemplo) -->
+    <div class="logo"> <span>De Campo Store</span> </div>          <!-- Opcion 2: Se colorea toda la frase -->
+                                                                   <!-- Opcion 3: Poner directamente un logo -->
 
     <nav>
       <ul class="menu">
@@ -28,13 +45,17 @@
   </div>
 </header>
 
-<!-- ==================== MAIN ==================== -->
+<!-- ==========================================================================
+==================================== MAIN =====================================
+=========================================================================== -->
+
 <main>
 
   <!-- Banner de bienvenida -->
   <section class="hero">
-    <h1>Nueva temporada 2026</h1>
-    <p>Ropa urbana para programar cómodo. Envío gratis a todo el país.</p>
+    <h1> TEMPORADA VERANO 26/27</h1>
+    <p>El estilo del alma libre. Ropa y accesorios frescos, naturales y con un diseño único.</p>
+    <p>(Envíos a todo el país)</p>
     <a href="#productos" class="boton">Ver productos</a>
   </section>
 
@@ -44,74 +65,80 @@
 
     <div class="grilla-productos">
 
-      <!-- Card 1 -->
+      <!-- -------------------------- Card 1 ------------------------------ -->
+      
       <article class="card">
-        <img src="https://placehold.co/400x300/2F8F83/FFFFFF?text=Remera" alt="Remera oversize verde">
+        <img src="https://placehold.co/400x300/2F8F83/FFFFFF?text=Remeras" alt="Remera black and white de algodon">
         <div class="card-info">
           <span class="categoria">Remeras</span>
-          <h3>Remera Oversize Hola Mundo</h3>
-          <p>100% algodón peinado. Talles S al XXL.</p>
-          <span class="precio">$18.900</span>
+          <h3>Black and White diferentes estampados</h3>
+          <p>100% algodón peinado. Talles S al XL.</p>
+          <span class="precio">$30.000</span>
           <button><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
         </div>
       </article>
 
-      <!-- Card 2 -->
+      <!-- ---------------------------- Card 2 ---------------------------- -->
+      
       <article class="card">
-        <img src="https://placehold.co/400x300/1F6F66/FFFFFF?text=Buzo" alt="Buzo con capucha">
+        <img src="https://placehold.co/400x300/1F6F66/FFFFFF?text=Pañuelos" alt="Pañuelos de ceda italianos">
         <div class="card-info">
-          <span class="categoria">Buzos</span>
-          <h3>Buzo Canguro Dev Mode</h3>
-          <p>Frisa invisible, bolsillo canguro y cordón ajustable.</p>
-          <span class="precio">$42.500</span>
+          <span class="categoria">Pañuelos</span>
+          <h3>Elegancia, calidad textil y detalles de confección únicos</h3>
+          <p>Italianos. 80x80 cm.</p>
+          <span class="precio">$10.000</span>
           <button><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
         </div>
       </article>
 
-      <!-- Card 3 -->
+      <!-- ---------------------------- Card 3 ---------------------------- -->
+
       <article class="card">
-        <img src="https://placehold.co/400x300/44618C/FFFFFF?text=Jean" alt="Jean recto azul">
+        <img src="https://placehold.co/400x300/44618C/FFFFFF?text=Gorras" alt="Gorras de gabardina">
         <div class="card-info">
-          <span class="categoria">Pantalones</span>
-          <h3>Jean Recto Clásico</h3>
-          <p>Denim rígido azul, cinco bolsillos, corte recto.</p>
-          <span class="precio">$55.000</span>
+          <span class="categoria">Gorras</span>
+          <h3>Estilo original y clásico con estructuras firmes</h3>
+          <p>Gorras de Gabardina Premium.</p>
+          <span class="precio">$25.000</span>
           <button><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
         </div>
       </article>
 
-      <!-- Card 4 -->
+      <!-- ---------------------------- Card 4 ---------------------------- -->
+
       <article class="card">
-        <img src="https://placehold.co/400x300/FFD34D/222222?text=Campera" alt="Campera rompeviento amarilla">
+        <img src="https://placehold.co/400x300/FFD34D/222222?text=Sombreros" alt="Sombreros de sol Lagomarsino">
         <div class="card-info">
-          <span class="categoria">Camperas</span>
-          <h3>Campera Rompeviento</h3>
-          <p>Impermeable, liviana y con capucha desmontable.</p>
-          <span class="precio">$68.900</span>
+          <span class="categoria">Sombreros</span>
+          <h3>Materiales frescos y con protección a la radiación</h3>
+          <p>Sombreros cómodos y de ajuste.</p>
+          <span class="precio">$15.000</span>
           <button><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
         </div>
       </article>
 
-      <!-- Card 5 -->
-      <article class="card">
-        <img src="https://placehold.co/400x300/8A6BBE/FFFFFF?text=Zapatillas" alt="Zapatillas urbanas">
-        <div class="card-info">
-          <span class="categoria">Calzado</span>
-          <h3>Zapatillas Urbanas Sneak</h3>
-          <p>Suela de goma antideslizante. Del 36 al 45.</p>
-          <span class="precio">$74.200</span>
-          <button><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
-        </div>
-      </article>
+      <!-- ---------------------------- Card 5 ---------------------------- -->
 
-      <!-- Card 6 -->
       <article class="card">
-        <img src="https://placehold.co/400x300/C94F4F/FFFFFF?text=Gorra" alt="Gorra roja con visera">
+        <img src="https://placehold.co/400x300/8A6BBE/FFFFFF?text=Accesorios" alt="Collares y pulseras de piedra">
         <div class="card-info">
           <span class="categoria">Accesorios</span>
-          <h3>Gorra Trucker 404</h3>
-          <p>Visera curva, malla trasera y cierre regulable.</p>
-          <span class="precio">$12.300</span>
+          <h3>Combinan estética, originalidad y un significado energético</h3>
+          <p>Accesorios de piedras naturales.</p>
+          <span class="precio">$20.000</span>
+          <button><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- ---------------------------- Card 6 ---------------------------- -->
+
+      <article class="card">
+        <img src="https://placehold.co/400x300/C94F4F/FFFFFF?text=Sahumerios" alt="Sahumerios de la india">
+        <div class="card-info">
+          <span class="categoria">Sahumerios</span>
+          <h3>Aromas naturales, intensos, profundos y de larga duración.</h3>
+          <p>Fragnacias de la India.</p>
+          <span class="precio">$5.000</span>
           <button><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
         </div>
       </article>
@@ -119,7 +146,8 @@
     </div>
   </section>
 
-  <!-- Seccion de contacto: datos a la izquierda, mapa a la derecha -->
+  <!-- --- Seccion de contacto: datos a la izquierda, mapa a la derecha --- -->
+
   <section id="contacto" class="contenedor">
     <h2 class="titulo-seccion">Donde encontrarnos</h2>
 
@@ -129,8 +157,8 @@
       <div class="datos-contacto">
         <h3>Local central</h3>
         <ul>
-          <li><i class="fa-solid fa-location-dot"></i> Av. 9 de Julio s/n, Obelisco - CABA</li>
-          <li><i class="fa-solid fa-clock"></i> Lunes a sabados de 10 a 20 hs</li>
+          <li><i class="fa-solid fa-location-dot"></i> Junin 400, CABA - Argentina</li>
+          <li><i class="fa-solid fa-clock"></i> Lunes a Viernes de 0900 a 1700 hrs</li>
         </ul>
 
         <h3>Telefonos</h3>
@@ -138,16 +166,17 @@
           <li><i class="fa-solid fa-phone"></i> Ventas: <a href="tel:+541145550001">+54 11 4555-0001</a></li>
           <li><i class="fa-solid fa-headset"></i> Posventa: <a href="tel:+541145550002">+54 11 4555-0002</a></li>
           <li><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="tel:+5491145550003">+54 9 11 4555-0003</a></li>
-          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@talentotech.com.ar">info@talentotech.com.ar</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:decampo@gmail.com.ar">decampo@gmail.com.ar</a></li>
         </ul>
         <p class="nota">* Datos de contacto ficticios, solo de ejemplo.</p>
       </div>
 
-      <!-- Columna del mapa: iframe de Google Maps  -->
+      <!-- ----------- Columna del mapa: iframe de Google Maps -----------  -->
+
       <div class="mapa">
         <iframe
-          src="https://www.google.com/maps?q=Obelisco%20de%20Buenos%20Aires&z=16&output=embed"
-          title="Mapa del Obelisco de Buenos Aires"
+          src="https://www.google.com/maps?q=Junin%20400%20CABA&z=16&output=embed"
+          title="Mapa de De Campo, CABA, Buenos Aires"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           allowfullscreen></iframe>
@@ -157,45 +186,56 @@
   </section>
 </main>
 
-<!-- ==================== FOOTER ==================== -->
+<!-- ==========================================================================
+==================================== FOOTER ===================================
+=========================================================================== -->
+
 <footer>
   <div class="contenedor footer-columnas">
 
-    <!-- Columna 1: sobre la tienda -->
+    <!-- ----------------- Columna 1: sobre la tienda --------------------- -->
+
     <div class="columna">
-      <h4>TalentoTech Store</h4>
-      <p>Tienda de ropa creada como ejemplo para el curso de
-         Desarrollo Web de TalentoTech.</p>
+      
+      <!-- <h4>TalentoTech Store</h4>
+      <p>Tienda de ropa creada como ejemplo para el curso de Desarrollo Web de TalentoTech.</p> -->
+
+      <h4>De Campo Store</h4>
+      <p>Indumentaria y accesorios con un aire de campo.</p>
+      <p>Estilo y calidad.</p>
+         
     </div>
 
-    <!-- Columna 2: contacto -->
+    <!-- ---------------------- Columna 2: contacto ----------------------- -->
+
     <div class="columna">
       <h4>Contacto</h4>
       <ul>
-        <li><i class="fa-solid fa-envelope"></i> info@talentotech.com.ar</li>
-        <li><i class="fa-solid fa-phone"></i> +54 11 4555-0001</li>
+        <li><i class="fa-solid fa-envelope"></i> decampo@gmail.com</li>
+        <!-- <li><i class="fa-solid fa-phone"></i> +54 11 4555-0001</li> -->
         <li><i class="fa-brands fa-whatsapp"></i> +54 9 11 4555-0003</li>
-        <li><i class="fa-solid fa-location-dot"></i> Obelisco, CABA - Argentina</li>
+        <li><i class="fa-solid fa-location-dot"></i> Junin 400, CABA - Argentina</li>
       </ul>
     </div>
 
-    <!-- Columna 3: redes sociales con iconos de Font Awesome -->
+    <!-- ------ Columna 3: redes sociales con iconos de Font Awesome ------ -->
+
     <div class="columna">
       <h4>Seguinos</h4>
-      <p>@talentotech</p>
+      <p>@decampo</p>
       <div class="redes">
         <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <!-- <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a> -->
+        <!-- <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a> -->
+        <!-- <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a> -->
         <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
 
   </div>
 
-  <p class="copyright">&copy; 2026 TalentoTech Store </p>
+  <p class="copyright">&copy; Catálogo Online - by Carolina S.</p>
 </footer>
 
 </body>
